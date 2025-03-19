@@ -72,6 +72,34 @@
                 </p>
                 <div class="thumb row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-3 g-5">
 
+                    <!-- GOLANG NOTES: THUMBNAIL -->
+                    <div class="col">
+                        <div class="card h-100 border-0" data-bs-toggle="modal" data-bs-target="#goNotesModal">
+                            <div style="background-color: #35363a; position: relative;">
+                                <img src="./images/gonotes/read.jpg" style="filter: brightness(90%)" class="card-img-top" alt="...">
+                                <img src="./images/logo_dibimbing.png" class="" style="position: absolute; left: 4%; top: 5.75%;" width="30px" height="30px" title="dibimbing.id" alt="">
+                            </div>
+                            <div class="card-body">
+                                <p class="card-title">Go Notes</p>
+                                <p class="card-desc">
+                                    Simple CRUD note taking application developed using Golang as part of Web Developer Series 11.0 hosted by dibimbing.id.
+                                </p>
+                            </div>
+                            <div class="card-footer border-0 bg-white">
+                                <p class="card-desc" style="position: relative;">
+                                    <small class="text-body-secondary">Frontend: Bootstrap 5.3</small><br>
+                                    <small class="text-body-secondary">Backend : Golang, MySQL</small>
+                                    <a href="https://github.com/hibried/Golang-Notes" target="_blank" class="text-decoration-none" style="position: absolute; right: 5%; bottom: 25%;" title="Click to view the source code">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"></path>
+                                            <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"></path>
+                                        </svg>
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- GUEST VISIT MANAGEMENT: THUMBNAIL -->
                     <div class="col">
                         <div class="card h-100 border-0" data-bs-toggle="modal" data-bs-target="#gvmanModal">
@@ -223,6 +251,103 @@
                         </div>
                     </div>
 
+                </div>
+            </div>
+
+            <!-- GO NOTES: CONTENT MODAL -->
+            <div class="modal fade" id="goNotesModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-fullscreen">
+                    <div class="modal-content">
+                        <div class="modal-header border-0 pb-2">
+                            <h1>Go Notes' Pages</h1>
+                            <div class="close-btn">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="row g-3 g-xl-4">
+                                    <div class="col-xl-4 col-md-6">
+                                        <img src="images/gonotes/read.jpg" style="filter: brightness(90%)" title="Click to view" class="img-fluid mb-2" alt="" data-bs-toggle="modal" data-bs-target="#gonotes_read">
+                                        <div>
+                                            <p class="modal-content-title mb-1">Notes</p>
+                                            <p class="modal-content-desc">
+                                                The main page of the application which shows saved notes.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <img src="images/gonotes/create.jpg" style="filter: brightness(90%)" title="Click to view" class="img-fluid mb-2" alt="" data-bs-toggle="modal" data-bs-target="#gonotes_create">
+                                        <div>
+                                            <p class="modal-content-title mb-1">Add Note</p>
+                                            <p class="modal-content-desc">
+                                                To add a new note, click 'Add Note' on the main page to open this page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <img src="images/gonotes/edit.jpg" style="filter: brightness(90%)" title="Click to view" class="img-fluid mb-2" alt="" data-bs-toggle="modal" data-bs-target="#gonotes_edit">
+                                        <div>
+                                            <p class="modal-content-title mb-1">Edit Note</p>
+                                            <p class="modal-content-desc">
+                                                To edit a note, click 'Edit' on one of the notes to open this page.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-4 col-md-6">
+                                        <img src="images/gonotes/delete.jpg" style="filter: brightness(90%)" title="Click to view" class="img-fluid mb-2" alt="" data-bs-toggle="modal" data-bs-target="#gonotes_delete">
+                                        <div>
+                                            <p class="modal-content-title mb-1">Delete Note</p>
+                                            <p class="modal-content-desc">
+                                                To delete a note, click 'Delete' on one of the notes and a confirmation alert will pop up.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="gonotes_read" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="close-btn" data-bs-theme="dark">
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#goNotesModal"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <img src="images/gonotes/read.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gonotes_create" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="close-btn" data-bs-theme="dark">
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#goNotesModal"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <img src="images/gonotes/create.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gonotes_edit" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="close-btn" data-bs-theme="dark">
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#goNotesModal"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <img src="images/gonotes/edit.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="modal fade" id="gonotes_delete" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="close-btn" data-bs-theme="dark">
+                    <button type="button" class="btn-close" data-bs-toggle="modal" data-bs-target="#goNotesModal"></button>
+                </div>
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                    <div class="modal-content">
+                        <img src="images/gonotes/delete.jpg">
+                    </div>
                 </div>
             </div>
 
